@@ -1407,6 +1407,23 @@
       border: 0;
       font-family: var(--sans);
     }
+
+    .soon-modal .soon-dismiss {
+      width: 100%;
+      justify-content: center;
+      margin-top: 10px;
+      padding: 12px 20px;
+      font-size: 14px;
+      color: var(--mute);
+      background: transparent;
+      border: 1px solid var(--line2);
+      font-family: var(--sans);
+    }
+
+    .soon-modal .soon-dismiss:hover {
+      color: var(--white);
+      border-color: var(--mute2);
+    }
   </style>
 </head>
 
@@ -1423,7 +1440,6 @@
         <a class="lnk" href="#hook">Muammo</a>
         <a class="lnk" href="#how">Qanday ishlaydi</a>
         <a class="lnk" href="#sports">Sport turlari</a>
-        <a class="lnk" href="#download">Yuklab ol</a>
         <a class="btn btn-volt" href="#download">Yuklab ol</a>
       </div>
       <button class="menu-btn" id="menubtn" aria-label="Menyu"><span></span><span></span><span></span></button>
@@ -1703,8 +1719,14 @@
     <div class="soon-modal">
       <div class="soon-ic" aria-hidden="true">🚀</div>
       <h3 id="soontitle">Tez orada!</h3>
-      <p>Bu bo'lim ustida ishlayapmiz. Yangiliklarni o'tkazib yubormaslik uchun bizni kuzatib boring.</p>
-      <button class="btn btn-volt" id="soonclose" type="button">Tushunarli</button>
+      <p>Bu bo'lim ustida ishlayapmiz. Yangiliklarni o'tkazib yubormaslik uchun Telegram kanalimizni kuzatib boring.</p>
+      <a class="btn btn-volt soon-tg" href="https://t.me/kigo_sherik" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M21.9 4.1c.3-1.2-.9-2.2-2-1.7L2.6 9.4c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.4 1.1 1.8 1.4 2.6.5l2.4-2.5 4.5 3.3c1 .7 2.4.2 2.7-1l3-14.9zM8.2 12.9l9.5-5.9c.2-.1.4.2.2.3l-7.8 7.2-.3 3-1.6-4.6z" />
+        </svg>
+        KiGo kanaliga qo'shilish
+      </a>
+      <button class="btn soon-dismiss" id="soonclose" type="button">Yopish</button>
     </div>
   </div>
 
